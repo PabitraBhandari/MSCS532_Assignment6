@@ -1,4 +1,6 @@
+import random
 import time
+from main import deterministic_select, randomized_select
 
 # Test on random, sorted, and reverse-sorted arrays
 def time_selection_algorithm(select_func, arr, k):
