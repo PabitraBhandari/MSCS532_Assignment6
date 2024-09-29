@@ -9,44 +9,44 @@
 
 - **Arrays**:
   - **Insertion**:
-    - Best case: \(O(1)\) when inserting at the end.
-    - Worst case: \(O(n)\) when inserting at the beginning or middle.
+    - Best case: O(1) when inserting at the end.
+    - Worst case: O(n) when inserting at the beginning or middle.
   - **Deletion**:
-    - Best case: \(O(1)\) when deleting the last element.
-    - Worst case: \(O(n)\) when deleting from the beginning or middle.
-  - **Access**: \(O(1)\) due to direct indexing.
+    - Best case: O(1) when deleting the last element.
+    - Worst case: O(n) when deleting from the beginning or middle.
+  - **Access**: O(1) due to direct indexing.
 
 - **Matrices**:
-  - **Access**: \(O(1)\).
-  - **Update**: \(O(1)\).
+  - **Access**: O(1).
+  - **Update**: O(1).
 
 - **Stacks (using arrays)**:
-  - **Push (Insertion)**: \(O(1)\).
-  - **Pop (Deletion)**: \(O(1)\).
-  - **Access**: \(O(1)\) for peeking the top element.
+  - **Push (Insertion)**: O(1).
+  - **Pop (Deletion)**: O(1).
+  - **Access**: O(1) for peeking the top element.
 
 - **Queues (using arrays)**:
-  - **Enqueue (Insertion)**: \(O(1)\).
-  - **Dequeue (Deletion)**: \(O(n)\) due to shifting elements.
+  - **Enqueue (Insertion)**: O(1).
+  - **Dequeue (Deletion)**: O(n) due to shifting elements.
 
 - **Linked Lists**:
-  - **Insertion**: \(O(1)\) when inserting at the head.
+  - **Insertion**: O(1) when inserting at the head.
   - **Deletion**:
-    - Best case: \(O(1)\) when deleting the head.
-    - Worst case: \(O(n)\) when searching for a node.
-  - **Traversal**: \(O(n)\).
-  - **Access**: \(O(n)\).
+    - Best case: O(1) when deleting the head.
+    - Worst case: O(n) when searching for a node.
+  - **Traversal**: O(n).
+  - **Access**: O(n).
 
 - **Rooted Trees (Optional)**:
-  - **Insertion**: \(O(1)\).
-  - **Traversal**: \(O(n)\), where \(n\) is the total number of nodes.
-  - **Access**: \(O(n)\).
+  - **Insertion**: O(1).
+  - **Traversal**: O(n), where \(n\) is the total number of nodes.
+  - **Access**: O(n).
 
 ### 2. Trade-offs Between Arrays and Linked Lists for Stacks and Queues
 
 #### Stacks
 - **Array-based Stack**:
-  - Advantages: Constant-time push and pop \(O(1)\); simple to implement.
+  - Advantages: Constant-time push and pop O(1); simple to implement.
   - Disadvantages: Fixed-size arrays may need resizing.
 
 - **Linked List-based Stack**:
@@ -55,22 +55,22 @@
 
 #### Queues
 - **Array-based Queue**:
-  - Advantages: Efficient enqueue \(O(1)\).
-  - Disadvantages: Dequeue is \(O(n)\) due to shifting elements.
+  - Advantages: Efficient enqueue O(1).
+  - Disadvantages: Dequeue is O(n) due to shifting elements.
 
 - **Linked List-based Queue**:
-  - Advantages: Constant-time enqueue and dequeue \(O(1)\), dynamic sizing.
+  - Advantages: Constant-time enqueue and dequeue O(1), dynamic sizing.
   - Disadvantages: Memory overhead due to pointers.
 
 ### 3. Efficiency Comparison in Different Scenarios
 
 | Scenario                     | Best Data Structure           | Reasoning                                                |
 |-------------------------------|-------------------------------|----------------------------------------------------------|
-| **Random Access**             | **Array**                     | Arrays provide \(O(1)\) random access.                    |
-| **Frequent Insertions/Deletions** | **Linked List**               | Insertions and deletions are \(O(1)\) in linked lists.     |
+| **Random Access**             | **Array**                     | Arrays provide O(1) random access.                    |
+| **Frequent Insertions/Deletions** | **Linked List**               | Insertions and deletions are O(1) in linked lists.     |
 | **Memory Constraints**        | **Linked List**               | Dynamic memory allocation, no fixed size.                 |
-| **Stack (LIFO) Operations**   | **Both**                      | Both arrays and linked lists offer \(O(1)\) operations.   |
-| **Queue (FIFO) Operations**   | **Linked List**               | Provides \(O(1)\) enqueue and dequeue operations.         |
+| **Stack (LIFO) Operations**   | **Both**                      | Both arrays and linked lists offer O(1) operations.   |
+| **Queue (FIFO) Operations**   | **Linked List**               | Provides O(1) enqueue and dequeue operations.         |
 
 ---
 
