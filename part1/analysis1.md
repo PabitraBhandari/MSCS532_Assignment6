@@ -16,7 +16,7 @@ The deterministic selection algorithm works by:
 2. Finding the median of each group and recursively selecting the median of medians.
 3. Partitioning the array around the median and selecting recursively within the appropriate partition.
    
-This ensures worst-case linear time complexity, \(O(n)\), by ensuring a good pivot for partitioning.
+This ensures worst-case linear time complexity, O(n), by ensuring a good pivot for partitioning.
 
 #### Randomized Selection (Quickselect)
 The randomized Quickselect algorithm works similarly to Quicksort:
@@ -24,20 +24,20 @@ The randomized Quickselect algorithm works similarly to Quicksort:
 2. Partitions the array around the pivot.
 3. Recursively selects from the appropriate partition.
    
-The expected time complexity is \(O(n)\), but the worst-case can degrade to \(O(n^2)\) in rare cases if poor pivots are selected repeatedly.
+The expected time complexity is O(n), but the worst-case can degrade to O(n^2) in rare cases if poor pivots are selected repeatedly.
 
 ### 2. Performance Analysis
 
 #### Time Complexity
 - **Deterministic Algorithm (Median of Medians)**:
-  - **Worst-case Time Complexity**: \(O(n)\).
-  - **Space Complexity**: \(O(n)\), mainly due to recursive calls and partitioning.
+  - **Worst-case Time Complexity**: O(n).
+  - **Space Complexity**: O(n), mainly due to recursive calls and partitioning.
   - The algorithm guarantees linear time by ensuring that at least 30% of the elements are removed from further consideration in each recursive call.
 
 - **Randomized Algorithm (Quickselect)**:
-  - **Expected Time Complexity**: \(O(n)\).
-  - **Worst-case Time Complexity**: \(O(n^2)\), but this happens with very low probability.
-  - **Space Complexity**: \(O(n)\), primarily due to recursive partitioning.
+  - **Expected Time Complexity**: O(n).
+  - **Worst-case Time Complexity**: O(n^2), but this happens with very low probability.
+  - **Space Complexity**: O(n), primarily due to recursive partitioning.
   - On average, the randomized approach quickly reduces the size of the problem by partitioning based on a randomly chosen pivot.
 
 ### 3. Empirical Results
@@ -74,7 +74,7 @@ The empirical results of both algorithms were measured across different input si
 ### Observations
 - **Randomized Selection (Quickselect)** outperforms the **Deterministic Selection (Median of Medians)** in terms of execution time for all input sizes and distributions. 
 - For random input, the randomized algorithm is about twice as fast as the deterministic one for larger input sizes.
-- **Deterministic Selection** performs consistently across sorted and reverse-sorted arrays, as it guarantees \(O(n)\) worst-case performance.
+- **Deterministic Selection** performs consistently across sorted and reverse-sorted arrays, as it guarantees O(n) worst-case performance.
 - **Randomized Selection** shows variability, but in practice, it remains highly efficient even for sorted or reverse-sorted arrays.
 
 ### 4. Conclusion
